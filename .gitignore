@@ -1,0 +1,10 @@
+# Webstorm
+.idea
+
+# Yarn / NPM
+node_modules
+bot/dist
+
+# Shadez Config
+config.json
+webpanel/.next

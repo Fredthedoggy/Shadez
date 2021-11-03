@@ -1,0 +1,38 @@
+{
+  "name": "shadez",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@types/styled-components": "^5.1.15",
+    "concurrently": "^6.3.0",
+    "discord.js": "^13.3.1",
+    "next": "12.0.2",
+    "prettier": "^2.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.33",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^1.13.3",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "react-is": "^17.0.2",
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.1",
+    "typescript": "4.4.4"
+  },
+  "scripts": {
+    "paneldev": "cd webpanel && next dev",
+    "panelbuild": "cd webpanel && next build",
+    "panelstart": "cd webpanel && next start -p 80",
+    "botdev": "cd bot/src && ts-node index.ts",
+    "botbuild": "tsc --project bot/tsconfig.json",
+    "botstart": "cd bot/dist && node index.js",
+    "build": "yarn panelbuild && yarn botbuild",
+    "start": "concurrently --kill-others --names \"BOT,WEB-PANEL\" -c \"red,blue\" \"yarn botstart\" \"yarn panelstart\""
+  }
+}
