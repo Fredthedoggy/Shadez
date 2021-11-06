@@ -15,6 +15,21 @@ module.exports = {
                 800: '#353d91',
                 900: '#2b3177',
             },
+            discord: {
+                50: "#f2f2f3",
+                100: "#e9eaea",
+                200: "#dcddde",
+                300: "#b9bbbe",
+                400: "#72767d",
+                500: '#4f545c',
+                600: '#36393f',
+                700: '#2f3136',
+                800: '#292b2f',
+                900: '#18191c',
+                warning: '#faa819',
+                danger: "#ed4245",
+                positive: "#4fdc7c"
+            }
         },
         extend: {
             spacing: {
